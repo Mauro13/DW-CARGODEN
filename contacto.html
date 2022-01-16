@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/contacto.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f3e2e18065.js" crossorigin="anonymous"></script>
+        <title>Cargoden - Contacto</title>
+</head>
+
+    <body>
+
+ <!------------------ H E A D E R ------------------>
+
+        <header class="header">
+
+            <!------------------ N A V B A R ------------------>
+
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="/img/logo.png" alt="logo">
+                </a>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li> 
+                        <a class="pagina active" href ="index.html">Inicio</a>
+                    </li>
+                    <li> 
+                        <a class="pagina" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li> 
+                        <a class="pagina" href="#">Servicios</a>
+                        <ul>
+                            <li> 
+                                <a class="pagina" href="servImp.html">Importaciones</a> 
+                            </li>
+                            <li> 
+                                <a class="pagina" href="servExt.html">Exportaciones</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <a class="pagina" href="contacto.html">Contacto</a>
+                    </li> 
+                </ul>
+            </nav>
+        </header>
+
+<!------------------ M A I N ------------------>
+        <main class="principal">
+        
+        <!------------------ R E G I S T R A T E ------------------>
+            
+            <div class="mailing">
+                <h1>pongámonos en contacto!</h1>
+                <h2>registrate!!!</h2>
+                <div class="correo">
+                    <label class="labelCorreo" for="correo">queremos compartirte muchas cosas!!</label>
+                    <input type="email" class="correo" id="correo" placeholder="escribe acá tu correo" required>
+                    <span class="linea"></span>
+                </div>
+                <div class="boton">
+                    <input type="submit" value="Enviar">
+                </div>   
+            </div>
+
+            <!------------------ C O N T A C T O ------------------>
+                
+        
+            <div class="contacto">
+                <h2>tus solicitudes por acá:</h2> 
+                
+                <p>datos</p>
+                
+                <form action="">
+                    <input id="GET-name" type="text" name="name" placeholder="nombre y apellido">
+                    <input type="email" class="correo" id="correo" placeholder="escribe acá tu correo" required>
+                    <label for="radio">¿Eres mayor de edad?</label>
+                    <label for="texto">si</label>
+                    <input type="radio" name="si" id="si">
+                    <label for="texto">no</label>
+                    <input type="radio" name="no" id="no"> 
+                    <label for="texto">Dejanos un comentario!</label>
+                    <textarea name="" id="" cols="70" rows="5"></textarea>
+                    
+                    <div class="boton">
+                        <input type="submit" value="Enviar">
+                    </div>    
+                </form>    
+                
+            </div>
+            <div class="mapa">
+                <h2>Nos puedes encontrar acá</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405689.78269440343!2d-122.04109805!3d37.40280355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2scl!4v1636596831799!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            
+    </main>
+    
+ <!------------------ F O O T E R ------------------>
+
+    <footer class="footer">
+        <p>@ made with Love...</p>
+        <div class="iconos">
+            <a href=".html" class="iconoFooter"><i class="fab fa-instagram"></i></a>
+            <a href=".html" class="iconoFooter"><i class="fab fa-facebook-f"></i></a>
+            <a href=".html" class="iconoFooter"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

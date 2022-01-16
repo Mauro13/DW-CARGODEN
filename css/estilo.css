@@ -1,0 +1,106 @@
+@import url("variables.css");
+@import url("media.css");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: var(--color-primario);
+  font-family: var(--fuente-primaria);
+  background-color: var(--color-base); }
+
+/*  - - - - - - - H E A D E R  - - - - - - - */
+.header {
+  display: grid;
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto; }
+  .header .navbar {
+    position: fixed;
+    background-color: var(--color-base);
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 2; }
+    .header .navbar button {
+      display: none; }
+    .header .navbar ul {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      list-style: none;
+      margin-right: 30px;
+      align-items: center; }
+      .header .navbar ul ul li {
+        background-color: white;
+        height: 30px;
+        text-decoration: none; }
+      .header .navbar ul ul {
+        position: absolute;
+        display: none; }
+      .header .navbar ul li:hover ul {
+        display: block;
+        text-decoration: none; }
+    .header .navbar a {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+      text-decoration: none; }
+      .header .navbar a img {
+        height: 25px; }
+      .header .navbar a:hover {
+        color: var(--color-secundario);
+        transition: 0.3s; }
+
+/*  - - - - - - - R E G I S T R A T E - - - - - - - */
+.contenedor .mailingHome {
+  grid-column: 1 / -1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 10px;
+  grid-row: 4 / 5;
+  height: 500px; }
+  .contenedor .mailingHome .correo {
+    width: 400px; }
+    .contenedor .mailingHome .correo .labelCorreo {
+      font-size: 20px;
+      margin-left: 30px;
+      padding-top: 30px; }
+    .contenedor .mailingHome .correo .correo {
+      width: 80%;
+      padding: 12px;
+      border: none;
+      margin: 5px 20px 0 30px;
+      outline: none;
+      border-bottom: 4px solid var(--color-primario);
+      color: var(--color-primario); }
+  .contenedor .mailingHome .boton input {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-primario);
+    background-color: var(--color-auxiliar);
+    margin-top: 30px; }
+
+/*  - - - - - - -  F O O T E R  - - - - - - - */
+.footer {
+  background-color: var(--color-secundario);
+  color: white;
+  grid-column: 1 / -1;
+  display: block;
+  height: 200px;
+  text-align: center; }
+  .footer p {
+    margin-top: 70px;
+    font-size: var(--text-xl); }
+  .footer .iconos {
+    margin-top: var(--spacer-s); }
+  .footer a {
+    color: white;
+    font-size: var(--text-2xl);
+    margin: 0 var(--spacer-m); }

@@ -1,0 +1,53 @@
+:root {
+    
+  /*----- C O L O R E S ----- */
+
+  --color-primario: #5f0b8b;
+  --color-secundario: #FF6F61;
+  --color-auxiliar: #26D07C;
+  --color-base: white;
+
+  /*----- F U E N T E S ----- */
+
+   --fuente-primaria: 'Red Hat Text', sans-serif;
+   
+
+}
+
+
+html {
+  /* -----------  Variables tipográficas ----------- */
+  
+  --text-2xs: 10px;
+  --text-xs: 12px;
+  --text-s: 14px;
+  --text-m: 16px;
+  --text-l: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+  --text-6xl: 64px;
+
+  /* ----------- Escala aplicada ----------- */
+
+  --text-caption: var(--text-xs);
+  --text-note: var(--text-x);
+  --text-base: var(--text-m);
+  --text-subheader: var(--text-2xl);
+  --text-title: var(--text-3xl);
+  --text-headline: var(--text-4xl);
+  --text-display: var(--text-5xl);
+  --text-jumbo: var(--text-6xl);
+
+  /* ----------- Variables de espaciado ----------- */
+  
+  --spacer-2xs: 2px;
+  --spacer-xs: 5px;
+  --spacer-s: 10px;
+  --spacer-m: 20px;
+  --spacer-l: 40px;
+  --spacer-xl: 80px;
+  --spacer-2xl: 160px;
+}

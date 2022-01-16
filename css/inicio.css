@@ -1,0 +1,130 @@
+@import url('variables.css');
+
+@import url('media.css');
+
+/*  - - - - - - -  P R I N C I P A L - - - - - - - */
+
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 10px;
+}
+
+
+/*  - - - - - - - M A I N   - - - - - - - */
+
+
+.contenedor .contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column: 1 / -1;
+    margin: 100px 0 auto 0;   
+}
+
+.contenido .banner{
+    grid-column: 1 /-1;
+    position: relative; 
+}
+
+.contenedor .contenido .banner img{ 
+    width: 100%;
+}
+
+.contenedor .contenido .banner P{ 
+    font-weight: 700;
+    font-size: 60px;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 100px;
+    z-index: 1;
+    color: var(--color-base);
+    width: 25%;
+ }
+
+.contenido .infoMain{
+    max-width: 1024px;
+    width: 90%;
+    margin: 100px auto;
+    grid-column: 1 /-1;
+    display: flex;
+    align-items: center;
+
+}
+
+.contenido .textMain{
+    max-width: 500px;
+}
+
+
+.contenido .imgMain img{ 
+    width: 500px;
+ }
+ 
+
+/*  - - - - - - - S E R V I C I O S - - - - - - - */
+
+.contenedor .servicios{
+    width: 85%;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    margin: 0 auto;
+    max-width: 1024px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 20px;  
+}
+
+.servicios .textoServicio p{
+    overflow: auto;
+    max-height: 200px;
+}
+
+.contenedor .servicios article img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+       
+    /*  - - - - - - -  H E A D E R   - - - - - - - */
+    
+    .header{
+    
+        display: grid;
+        width: 100%;
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .header .navbar {
+        position: fixed;
+        background-color: var(--color-base);
+        display: block;
+       
+        height: 100px;
+        z-index: 2; }
+
+
+    /*  - - - - - - - FOOTER  - - - - - - - */
+   
+    .footer{
+        background-color: violet;
+        color: white;
+        grid-column: 1 / -1;
+        display: block;
+        height: 200px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+
+  }
