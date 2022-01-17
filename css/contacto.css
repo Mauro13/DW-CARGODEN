@@ -1,0 +1,129 @@
+
+/*------------- B O D Y  -----------*/
+body{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 1fr 200px;
+    grid-gap: 10px;
+    
+}
+
+
+/*------------- P R I N C I P A L -----------*/
+.principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 500px 1fr;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    justify-items: center;
+}
+
+
+/*------------- M A I L I N G -----------*/
+body .principal .mailing{
+    display: block;
+    align-self: center;
+    width: 600px;  
+}
+
+.principal .mailing h1{
+    margin: 10px 0;
+    text-align: left;
+    display: block;
+}
+
+.mailing .correo{
+    height: auto;
+}
+
+.mailing .correo .labelCorreo{
+    font-size: 25px;
+    justify-self: center;
+}
+
+.mailing .correo input.correo {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    margin: 0 20px 0 10px;
+    outline: none;
+    border-bottom: 4px solid #5f0b8b;
+    color: #5f0b8b;
+}
+
+.mailing .boton input{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: #5f0b8b;
+    background-color: #26D07C;
+    margin-top: 30px;
+}
+
+
+/*------------- C O N T A C T O -----------*/
+body .contacto{
+    display: block;
+    width: 600px;
+    margin: 50px 50px;
+    grid-column: 1 / -1;  
+}
+
+form.formulario input.correo {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    margin: 0 20px 0 10px;
+    outline: none;
+    border-bottom: 4px solid #5f0b8b;
+    color: #5f0b8b;
+}
+
+
+.contacto h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;  
+}
+
+.contacto p{
+    font-size: 25px;
+    /* font-weight: 600; */
+    margin: 20px 0;
+    
+}
+
+textarea{
+    border: none;
+    background-color: #e5e5f7;
+    opacity: 0.3;
+    background-image:  radial-gradient(#8231c1 0.8500000000000001px, transparent 0.8500000000000001px), radial-gradient(#8231c1 0.8500000000000001px, #e5e5f7 0.8500000000000001px);
+    background-size: 34px 34px;
+    background-position: 0 0,17px 17px;
+}
+
+.contacto .boton input{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: #5f0b8b;
+    background-color: #26D07C;
+    margin-top: 30px;
+}
+
+
+
+/*------------- M A P A -----------*/
+body .principal .mapa{
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    margin-bottom: 200px;
+    max-height: 600px;
+}
+
+body .principal .mapa H2{
+    margin-bottom: 30px;
+}

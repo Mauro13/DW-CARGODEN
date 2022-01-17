@@ -1,0 +1,164 @@
+
+.principal{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+
+/*-------------GRID PRINCIPAL----------*/
+
+main.nosotros{
+    width: 100%;
+    max-width: 1360px;
+    height: auto;
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 500px 500px 1fr 200px;
+    grid-gap: 10px; 
+    
+    
+}
+
+/*------------- P E R F I L  1 ----------*/
+main.nosotros .perfil-1{
+    background-color: white;
+    grid-column: 1/-1;
+    grid-row: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px; 
+      
+}
+
+.perfil-1 .imgPerfil-1{
+    background-image: url(/img/perfilHombre.jpg);
+    background-size:  cover;
+    background-repeat: no-repeat;
+    grid-row: auto;
+    grid-column: 1 / 2;
+    height: 90%;
+    width: 60%;
+    justify-self: center;
+    align-self: center; 
+    border-radius: 10px;  
+}
+
+.perfil-1 .textoPerfil-1{
+    background-color: white;
+    margin: 30px 0 30px 0;
+    margin-top: 30px;
+    width: 90%;    
+}
+
+.textoPerfil-1 h1, .textoPerfil-1 p{
+    max-height: 400px;
+    background-color: white;
+    width:100%;
+    overflow: auto;     
+}
+
+/*------------- P E R F I L  2 ----------*/
+
+.perfil-2{
+    background-color: white;
+    grid-column: 1/-1;
+    grid-row: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;   
+}
+
+.perfil-2 .imgPerfil-2{
+    background-image: url(/img/perfilMujer.jpg);
+    background-size:  cover;
+    background-repeat: no-repeat;
+    grid-row: auto;
+    grid-column: 2 / 3;
+    height: auto;
+    width: 60%;
+    height: 90%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.perfil-2 .textoPerfil-2{
+    background-color: white;
+    margin: 30px 0 0 80px;
+    width: 90%;    
+}
+
+.textoPerfil-2 h1, .textoPerfil-2 p{
+    max-height: 400px;
+    background-color: white;
+    width:100%;
+    overflow: auto;   
+}
+
+/*------------- V A L O R E S ----------*/
+.valores{
+    margin-top: 50px;
+    background-color: white;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+}
+
+.valores h1{
+    margin-left: 80px;
+}
+
+.valores .valores-vision{
+    background-color: white;
+    height: 300px;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 1024px;
+    justify-self: center;
+    overflow: auto;
+}
+
+.valores .valores-mision{
+    background-color: white;
+    height: 300px;
+    width: 80%;
+    max-width: 1024px;
+    justify-self: center;
+    overflow: auto;
+}
+
+/*------------- F O O T E R -----------*/
+
+footer.footerNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FF6F61;
+    grid-column: 1 / -1;
+    grid-row: auto;
+    color: white;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+.footerNosotros p{
+    flex-direction: column;
+    font-size: 20px;
+    position: relative;
+}
+
+.footerNosotros a.iconoFooter{
+    font-size: 25px;
+    position: relative;
+    color: white;
+    margin: 0 30px;
+}
+
