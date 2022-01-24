@@ -52,23 +52,25 @@
     grid-column: 1 /-1;
     display: flex;
     align-items: center;
-
 }
 
-.contenido .textMain{
+.infoMain .textoMain{
     max-width: 500px;
+    min-width: 250px;    
 }
 
 
 .contenido .imgMain img{ 
-    width: 500px;
+    width: 100%;
+    min-width: 450px;
+    
  }
  
 
 /*  - - - - - - - S E R V I C I O S - - - - - - - */
 
 .contenedor .servicios{
-    width: 85%;
+    /* width: 85%;
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     margin: 0 auto;
@@ -77,12 +79,35 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-gap: 20px;  
+    grid-gap: 20px;   */
+    /* grid-auto-rows: 22rem; */
+    max-width: 1024px;
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    justify-items: center;
+
+}
+
+
+.servicios .cardServicio{
+    margin-bottom: var(--spacer-l);
+    justify-content: center;
+}
+
+.servicios .textoServicio{
+    margin-top: var(--spacer-m); 
 }
 
 .servicios .textoServicio p{
+    margin-top: var(--spacer-m);
     overflow: auto;
     max-height: 200px;
+    font-size: var(--text-l);
 }
 
 .contenedor .servicios article img{
@@ -93,38 +118,13 @@
 
 
 @media screen and (max-width: 768px) {
-       
-    /*  - - - - - - -  H E A D E R   - - - - - - - */
-    
-    .header{
-    
-        display: grid;
-        width: 100%;
-        grid-column: 1 / -1;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+
+    .contenido .infoMain{
+        
+        width: 70%;
+        grid-column: 1 /-1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
-
-    .header .navbar {
-        position: fixed;
-        background-color: var(--color-base);
-        display: block;
-       
-        height: 100px;
-        z-index: 2; }
-
-
-    /*  - - - - - - - FOOTER  - - - - - - - */
-   
-    .footer{
-        background-color: violet;
-        color: white;
-        grid-column: 1 / -1;
-        display: block;
-        height: 200px;
-        margin-top: 100px;
-        text-align: center;
-    }
-
-
   }

@@ -127,9 +127,6 @@ body {
         background-color: var(--color-auxiliar);
         margin-top: 30px;
     }
-    
-
-
 
 }
 
@@ -161,6 +158,42 @@ body {
 
 
 }
+
+@media screen and (max-width: 768px) {
+
+    .contenido {
+        
+       background-color: aquamarine;
+    }
+
+    .contenedor .mailingHome{
+        background-color: turquoise;
+        display: block;
+        margin: auto;
+       
+        h2{
+            
+        }
+
+       
+
+        .correo{
+            background-color: tomato;
+        }
+
+        .boton{
+            width: 100%;
+            align-self: center;
+
+            input{
+                text-align: center;
+                width: 100%;
+                
+            }
+
+        }
+    }
+  }
 
 
 

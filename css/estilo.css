@@ -104,3 +104,19 @@ body {
     color: white;
     font-size: var(--text-2xl);
     margin: 0 var(--spacer-m); }
+
+@media screen and (max-width: 768px) {
+  .contenido {
+    background-color: aquamarine; }
+  .contenedor .mailingHome {
+    background-color: turquoise;
+    display: block;
+    margin: auto; }
+    .contenedor .mailingHome .correo {
+      background-color: tomato; }
+    .contenedor .mailingHome .boton {
+      width: 100%;
+      align-self: center; }
+      .contenedor .mailingHome .boton input {
+        text-align: center;
+        width: 100%; } }
