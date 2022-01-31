@@ -10,12 +10,17 @@
   /*----- F U E N T E S ----- */
 
    --fuente-primaria: 'Red Hat Text', sans-serif;
-   
-
 }
 
 
+
 html {
+
+  /*----- A N I M A C I O N ----- */
+
+  /* --clippy-entrada: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  --clippy-salida: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+
   /* -----------  Variables tipográficas ----------- */
   
   --text-2xs: 10px;

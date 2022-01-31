@@ -12,29 +12,71 @@ body {
 /*  - - - - - - - H E A D E R  - - - - - - - */
 .header {
   width: 100%;
-  grid-column: 1 / -1; }
-  .header .nav__container .logo img {
-    height: 25px;
-    align-items: center; }
+  grid-column: 1 / -1;
+  align-content: center; }
   .header .nav {
-    background-color: turquoise;
+    background-color: var(--color-base);
     color: var(--color-primario);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 120px;
+    height: 110px;
     z-index: 2; }
-    .header .nav .nav__container ul {
+    .header .nav .nav__container {
+      height: 100%;
       display: flex;
-      margin: 0 auto;
-      justify-content: end;
-      align-items: center; }
-      .header .nav .nav__container ul li {
-        margin-right: 30px;
-        list-style: none; }
-        .header .nav .nav__container ul li a {
-          text-decoration: none; }
+      align-items: center;
+      justify-content: space-between; }
+      .header .nav .nav__container .logo img {
+        height: 25px;
+        margin-left: 30px; }
+      .header .nav .nav__container label .icono__menu, .header .nav .nav__container input.nav__input {
+        display: none; }
+      .header .nav .nav__container ul {
+        display: flex; }
+        .header .nav .nav__container ul ul {
+          position: absolute;
+          display: none;
+          background-color: var(--color-base); }
+        .header .nav .nav__container ul li ul li a {
+          text-decoration: none;
+          --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+          .header .nav .nav__container ul li ul li a::after {
+            content: "";
+            display: block;
+            background-color: var(--color-auxiliar);
+            width: 95%;
+            margin-top: 3px;
+            height: 4px;
+            clip-path: var(--clippy);
+            transition: clip-path .2s; }
+          .header .nav .nav__container ul li ul li a:hover {
+            --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+        .header .nav .nav__container ul li:hover ul {
+          display: block;
+          height: 5em;
+          padding-left: 20px;
+          padding-bottom: 15px;
+          background-color: var(--color-base); }
+        .header .nav .nav__container ul li {
+          margin-right: 30px;
+          list-style: none;
+          margin-top: 10px; }
+          .header .nav .nav__container ul li .nav__item {
+            text-decoration: none;
+            --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+            .header .nav .nav__container ul li .nav__item::after {
+              content: "";
+              display: block;
+              background-color: var(--color-auxiliar);
+              width: 95%;
+              margin-top: 3px;
+              height: 4px;
+              clip-path: var(--clippy);
+              transition: clip-path .2s; }
+            .header .nav .nav__container ul li .nav__item:hover {
+              --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
 
 /*  - - - - - - - R E G I S T R A T E - - - - - - - */
 .contenedor .mailingHome {
@@ -89,51 +131,26 @@ body {
     font-size: var(--text-2xl);
     margin: 0 var(--spacer-m); }
 
-@media screen and (max-width: 768px) {
-  .header {
-    display: grid;
+@media (max-width: 768px) {
+  .header .nav .nav__container label .icono__menu {
+    display: block;
+    cursor: pointer;
+    margin-right: 30px; }
+  .header .nav .nav__container .nav__menu {
+    position: fixed;
+    background-color: var(--color-base);
+    top: 110px;
+    bottom: 60%;
     width: 100%;
-    grid-column: 1 / -1;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto; }
-    .header .navbar {
-      display: flex;
-      position: fixed;
-      background-color: var(--color-auxiliar);
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 100px;
-      z-index: 2; }
-      .header .navbar button {
-        display: none; }
-      .header .navbar ul {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        list-style: none;
-        margin-right: 30px;
-        align-items: center; }
-        .header .navbar ul ul li {
-          background-color: white;
-          height: 30px;
-          text-decoration: none; }
-        .header .navbar ul ul {
-          position: absolute;
-          display: none; }
-        .header .navbar ul li:hover ul {
-          display: block;
-          text-decoration: none; }
-      .header .navbar a {
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
-        text-decoration: none; }
-        .header .navbar a img {
-          height: 25px; }
-        .header .navbar a:hover {
-          color: var(--color-secundario);
-          transition: 0.3s; }
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path .5s ease-in-out; }
+  .header .nav .nav__container input.nav__input:checked + .nav__menu {
+    clip-path: circle(100% at center); }
   .contenedor .mailingHome {
     display: block;
     margin: auto; }
