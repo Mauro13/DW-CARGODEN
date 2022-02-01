@@ -36,7 +36,7 @@
 
 .contenedor .contenido .banner P{ 
     font-weight: 700;
-    font-size: 60px;
+    font-size: var(--text-6xl);
     position: absolute;
     margin-top: 20%;
     margin-left: 100px;
@@ -63,24 +63,12 @@
 .contenido .imgMain img{ 
     width: 100%;
     min-width: 450px;
-    
  }
  
 
 /*  - - - - - - - S E R V I C I O S - - - - - - - */
 
 .contenedor .servicios{
-    /* width: 85%;
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-    margin: 0 auto;
-    max-width: 1024px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-gap: 20px;   */
-    /* grid-auto-rows: 22rem; */
     max-width: 1024px;
     display: grid;
     grid-column: 1 / -1;
@@ -127,4 +115,17 @@
         flex-wrap: wrap;
         align-items: center;
     }
+
+    .contenedor .contenido .banner P{ 
+        font-weight: 700;
+        font-size: var(--text-5xl);
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 100px;
+        z-index: 1;
+        color: var(--color-base);
+        width: 25%;
+     }
+
+
   }
