@@ -4,42 +4,59 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilo.css">
+        <meta name="description" content="Importaciones y Exportaciones de a cualquier parte del mundo, via maritima, aerea o terrestre">
+        <meta name="keywords" content="container, inmportaciones, exportaciones, importacion,exportacion, aereo, maritimo, terrestre, carga, cargo, traslado, paqueteria">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/importacion.css">
+        <!-- <link rel="stylesheet" href="css/dist/css/bootstrap.min.css"> -->
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
         <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/f3e2e18065.js" crossorigin="anonymous"></script>
-        <title>Servicios</title>
+        <title>Servicios - Cargoden</title>
     </head>
 
     <body>
-        <header>
-            <nav>
-                <a href="index.html">
-                    <img src="/img/logo.png" alt="logo">
-                </a>
-                <ul>
-                    <li> 
-                        <a href="index.html">Inicio<span>|</span></a>
-                    </li>
-                    <li> 
-                        <a href="nosotros.html">Nosotros<span>|</span></a>
-                    </li>
-                    <li> 
-                        <a href="serv.html">Servicios<span>|</span></a>
-                        <ul>
-                            <li> 
-                                <a href="servImp.html">Importaciones</a> 
-                            </li>
-                            <li> 
-                                <a href="servExt.html">Exportaciones</a> 
-                            </li>
-                        </ul>
-                    </li>
-                    <li> 
-                        <a href="contacto.html">Contacto</a>
-                    </li> 
-                </ul>
+        <header class="header">
+
+            <!------------------ N A V B A R ------------------>
+            <nav class="nav">
+                <div class="nav__container">
+                    
+                    <a href="index.html" class="logo">
+                        <img src="/img/logo.png" alt="logo">
+                    </a>
+                    
+                    <label for="menu">
+                        <img src="/assets/menu.svg" class="icono__menu" alt="">
+                    </label>
+                    
+                    <input type="checkbox" name="" id="menu" class="nav__input">
+                    
+                    <ul class="nav__menu">
+                        <li> 
+                            <a class="nav__item" href ="index.html">Inicio</a>
+                        </li>
+                        <li> 
+                            <a class="nav__item" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li> 
+                            <a class="nav__item" href="#">Servicios</a>
+                            <ul>
+                                <li> 
+                                    <a class="nav__itemA" href="servImp.html">Importaciones</a> 
+                                </li>
+                                <li> 
+                                    <a class="nav__itemB" href="servExt.html">Exportaciones</a> 
+                                </li>
+                            </ul>
+                        </li>
+                        <li> 
+                            <a class="nav__item" href="contacto.html">Contacto</a>
+                        </li> 
+                    </ul>
+                </div>
             </nav>
         </header>
         

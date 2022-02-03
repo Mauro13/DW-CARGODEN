@@ -14,78 +14,76 @@
         <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
         <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/f3e2e18065.js" crossorigin="anonymous"></script>
-        <title> Exportaciones - Cargoden </title>
+        <title>Exportaciones - Cargoden</title>
     </head>
 
 <body>
 
 <!------------------ H E A D E R ------------------>
     
-    <header class="header">
+<header class="header">
 
-        <!------------------ N A V B A R ------------------>
-
-        <nav class="navbar">
+    <!------------------ N A V B A R ------------------>
+    <nav class="nav">
+        <div class="nav__container">
+            
             <a href="index.html" class="logo">
                 <img src="/img/logo.png" alt="logo">
             </a>
-            <button class="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul>
+            
+            <label for="menu">
+                <img src="/assets/menu.svg" class="icono__menu" alt="">
+            </label>
+            
+            <input type="checkbox" name="" id="menu" class="nav__input">
+            
+            <ul class="nav__menu">
                 <li> 
-                    <a class="pagina active" href ="index.html">Inicio</a>
+                    <a class="nav__item" href ="index.html">Inicio</a>
                 </li>
                 <li> 
-                    <a class="pagina" href="nosotros.html">Nosotros</a>
+                    <a class="nav__item" href="nosotros.html">Nosotros</a>
                 </li>
                 <li> 
-                    <a class="pagina" href="#">Servicios</a>
+                    <a class="nav__item" href="#">Servicios</a>
                     <ul>
                         <li> 
-                            <a class="pagina" href="servImp.html">Importaciones</a> 
+                            <a class="nav__itemA" href="servImp.html">Importaciones</a> 
                         </li>
                         <li> 
-                            <a class="pagina" href="servExt.html">Exportaciones</a> 
+                            <a class="nav__itemB" href="servExt.html">Exportaciones</a> 
                         </li>
                     </ul>
                 </li>
                 <li> 
-                    <a class="pagina" href="contacto.html">Contacto</a>
+                    <a class="nav__item" href="contacto.html">Contacto</a>
                 </li> 
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
-    <main class="importacion">
-        <div class="principal-Importacion">
+<main class="importacion">
+    <div class="principal-Importacion">
+        <div class="imgImportacion">
             <h1>Exportaciones</h1>
-            
-            <div class="texto-Importaciones">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
-            </div>
             <img class="imgImportacion" src="img/serv2.jpg" alt="banner" id="banner">
-            
-            
         </div>
-        <div class="imgSecundarias">
-            <img class="img1" src="img/serv1.jpg" alt="ejemploServicio" id="ejemploServicio">
-            <img class="img2" src="img/banner2.jpg" alt="ejemploServicio" id="ejemploServicio">
-            <img class="img3" src="img/serv3.jpg" alt="ejemploServicio" id="ejemploServicio">
-        </div>
-        <footer class="footer">
-            <p>@ made with Love...</p>
-            <div class="iconos">
-                <a href=".html" class="iconoFooter"><i class="fab fa-instagram"></i></a>
-                <a href=".html" class="iconoFooter"><i class="fab fa-facebook-f"></i></a>
-                <a href=".html" class="iconoFooter"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </footer>
-
-    </main>    
+        
+        <div class="texto-Importaciones">
+           
+            <h3>nos encata poder formar parte de la solución</h3>
+            <p>Nuestra empresa ha establecido una alianza estratégica con Agencia de Aduanas certificada según Norma ISO 9001-2015, de tal manera de optimizar los servicios de internación o exportación aduanera de las mercaderías. Como prestador de servicios de Zulogística, se califica caso a caso, según índices de calidad.
+                 Las instrucciones aduaneras y el seguimiento operacional, así como la documentación y facturación, son recopiladas por nuestra empresa, revisando cobros y servicios correspondientes, dentro de los plazos adecuados requeridos.
+            </p>
+        </div>            
+    </div>
+    <div class="imgSecundarias">
+        <img class="img1" src="img/serv1.jpg" alt="ejemploServicio" id="ejemploServicio">
+        <img class="img2" src="img/banner2.jpg" alt="ejemploServicio" id="ejemploServicio">
+        <img class="img3" src="img/serv3.jpg" alt="ejemploServicio" id="ejemploServicio">
+    </div>
+<!------------------ F O O T E R ------------------>
+</main>   
 </body>
 </html>
