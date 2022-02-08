@@ -24,12 +24,15 @@ footer.footer{
 .principal-Importacion{
     max-width: 1024px;
     width: 90%;
-    margin: 200px auto;
+    margin: 150px auto;
     grid-column: 1 /-1;
     display: flex;
     align-items: center;
-    justify-content: center;
-      
+    justify-content: center;    
+}
+
+.importacion .imgImportacion{
+    margin-right: 30px;
 }
 
 .importacion .principal-Importacion .imgImportacion h1{
@@ -37,30 +40,18 @@ footer.footer{
     font-size: 50px;
 }
 
-.importacion .principal-Importacion .imgImportacion img{
-    max-width: 900px;
-    min-width: 300px;
-    width: auto;
+.principal-Importacion .imgImportacion img{
+    min-width: 400px;
+    width: 90%;
     border-radius: 5px;
 }
 
-.importacion .principal-Importacion img.imgImportacion{
-   width: 90%;
-   min-width: 300px;
-   height: auto;
-   align-self: center;
-   justify-self: center;
-   grid-row: span 1;
-   grid-column: 1 / 2;
-}
 
-.importacion .principal-Importacion .texto-Importaciones{
-    width: 80%;
-    justify-self: center;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    overflow: auto;
-    max-height: 400px;
+
+.principal-Importacion .texto-Importacion{
+    width:100%;
+    min-width: 300px;
+    max-height: 350px;
     background-color: white;
     align-self: center;
 }
@@ -69,31 +60,91 @@ footer.footer{
 .importacion .imgSecundarias{
     max-width: 1360px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     grid-column: 1 / -1;
-    grid-row: 2/ 3;
-    width: 100%;
-    grid-gap: 10px;
-    align-items: center;  
+    grid-row: auto;
+    width: 90%;
+    gap: 1rem;
+    margin: auto;
 }
 
-.imgSecundarias .img1{
-    grid-column: 1 /2;
-    grid-row: 1 / 2;
+.imgSecundarias .img1, .imgSecundarias .img2, .imgSecundarias .img3{
     width: 100%;
+    border-radius: 5px;
     
 }
 
-.imgSecundarias .img2{
-    grid-column: 2 / 3;
-    justify-self: center;
-    grid-row: 1 / 2;
-    width: 100%;
+
+/*  - - - - - - -   Z O N A  R E S P O N S I V E - - - - - - - */
+
+@media screen and (max-width: 850px) {
+    
+    
+    
+    .principal-Importacion{
+        width: 90%;
+        grid-column: 1 /-1;
+        display: flex;
+        align-items: center;
+    }
+    
+    .importacion .imgImportacion{
+        margin: auto; 
+    }
+    
+    .importacion .principal-Importacion .imgImportacion h1{
+        font-size: 40px;
+    }
+    
+    .principal-Importacion .imgImportacion img{
+        border-radius: 5px;
+        min-width: 350px;
+        width: 85%;
+        margin-right: 30px;
+    }
+
+    .principal-Importacion .texto-Importacion{
+        width:100%;
+        min-width: 300px;
+        max-height: 350px;
+        background-color: white;
+        align-self: center;
+        overflow: auto;
+        margin-top: 100px;
+    }
 }
-.imgSecundarias .img3{
-    grid-column: 3 / 4;
-    justify-self: center;
-    grid-row: 1 / 2;
-    width: 100%;
+
+@media screen and (max-width: 768px) {
+    
+    .principal-Importacion{
+        width: 80%;
+        grid-column: 1 /-1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .importacion .imgImportacion{
+        margin: 30px auto;
+    }
+    
+    .importacion .principal-Importacion .imgImportacion h1{
+        font-size: 40px;
+    }
+    
+    .principal-Importacion .imgImportacion img{
+        min-width:350px;
+        width: 95%;
+        border-radius: 5px;
+        
+    }
+
+    .principal-Importacion .texto-Importacion{
+        width: 100%;
+        max-height: 350px;
+        background-color: white;
+        margin-top: 90px;
+    }
+    
+
 }

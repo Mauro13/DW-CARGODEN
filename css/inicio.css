@@ -34,14 +34,14 @@
     width: 100%;
 }
 
-.contenedor .contenido .banner P{ 
+.contenedor .contenido .banner P{
+    color: var(--color-secundario); 
     font-weight: 700;
     font-size: var(--text-6xl);
     position: absolute;
-    margin-top: 20%;
+    margin-top: 25%;
     margin-left: 100px;
     z-index: 1;
-    color: var(--color-base);
     width: 25%;
  }
 
@@ -120,10 +120,10 @@
         font-weight: 700;
         font-size: var(--text-5xl);
         position: absolute;
-        margin-top: 20%;
+        margin-top: 25%;
         margin-left: 100px;
         z-index: 1;
-        color: var(--color-base);
+        color: var(--color-secundario);
         width: 25%;
      }
 

@@ -131,6 +131,7 @@ body {
     font-size: var(--text-2xl);
     margin: 0 var(--spacer-m); }
 
+/*  - - - - - - -   Z O N A  R E S P O N S I V E - - - - - - - */
 @media (max-width: 768px) {
   .header .nav .nav__container label .icono__menu {
     display: block;
