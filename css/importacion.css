@@ -1,9 +1,14 @@
 
 @import url('variables.css');
 
-@import url('media.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 /*-------------GRID PRINCIPAL----------*/
+
 main.importacion{
     width: 90%;
     max-width: 1024px;
@@ -16,11 +21,8 @@ main.importacion{
 }
 
 
-footer.footer{
-    align-items: center;
-}
-
 /*------------- I N F O  P R I N C I P AL ----------*/
+
 .principal-Importacion{
     max-width: 1024px;
     width: 90%;
@@ -46,8 +48,6 @@ footer.footer{
     border-radius: 5px;
 }
 
-
-
 .principal-Importacion .texto-Importacion{
     width:100%;
     min-width: 300px;
@@ -55,7 +55,6 @@ footer.footer{
     background-color: white;
     align-self: center;
 }
-
 
 .importacion .imgSecundarias{
     max-width: 1360px;
@@ -65,21 +64,44 @@ footer.footer{
     grid-row: auto;
     width: 90%;
     gap: 1rem;
-    margin: auto;
+    margin: 0 auto 200px auto;
 }
 
 .imgSecundarias .img1, .imgSecundarias .img2, .imgSecundarias .img3{
     width: 100%;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
 }
 
+
+/*------------- F O O T E R -----------*/
+
+footer.footerExportacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-secundario);
+    color: var(--color-base);
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+.footerExportacion p{
+    flex-direction: column;
+    font-size: 20px;
+    position: relative;
+}
+
+.footerExportacion a.iconoFooter{
+    font-size: 25px;
+    position: relative;
+    color: var(--color-base);
+    margin: 0 30px;
+}
 
 /*  - - - - - - -   Z O N A  R E S P O N S I V E - - - - - - - */
 
 @media screen and (max-width: 850px) {
-    
-    
     
     .principal-Importacion{
         width: 90%;
@@ -135,8 +157,7 @@ footer.footer{
     .principal-Importacion .imgImportacion img{
         min-width:350px;
         width: 95%;
-        border-radius: 5px;
-        
+        border-radius: 5px;   
     }
 
     .principal-Importacion .texto-Importacion{
@@ -145,6 +166,4 @@ footer.footer{
         background-color: white;
         margin-top: 90px;
     }
-    
-
 }

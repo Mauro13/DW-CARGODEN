@@ -1,6 +1,5 @@
 @import url('variables.css');
 
-@import url('media.css');
 
 /*  - - - - - - -  P R I N C I P A L - - - - - - - */
 
@@ -9,13 +8,11 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, auto);
     grid-gap: 10px;
 }
 
 
 /*  - - - - - - - M A I N   - - - - - - - */
-
 
 .contenedor .contenido{
     display: grid;
@@ -59,7 +56,6 @@
     min-width: 250px;    
 }
 
-
 .contenido .imgMain img{ 
     width: 100%;
     min-width: 450px;
@@ -78,9 +74,7 @@
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     justify-items: center;
-
 }
-
 
 .servicios .cardServicio{
     margin-bottom: var(--spacer-l);
@@ -104,6 +98,7 @@
 }
 
 
+/*  - - - - - - - Z O N A  R E S P O N S I V E - - - - - - - */
 
 @media screen and (max-width: 768px) {
 
@@ -126,6 +121,4 @@
         color: var(--color-secundario);
         width: 25%;
      }
-
-
-  }
+}

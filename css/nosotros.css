@@ -16,18 +16,17 @@ main.nosotros{
     width: 100%;
     max-width: 1360px;
     height: auto;
-    margin-top: 150px;
+    margin-top: var(--spacer-2xl);
     background-color: var(--color-base);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, auto);
-    grid-gap: 10px; 
-    
-    
+    grid-gap: 10px;  
 }
 
 /*------------- P E R F I L  1 ----------*/
-main.nosotros .perfil-1{  
+
+main.nosotros .perfil-1, main.nosotros .perfil-2{  
     max-width: 1024px;
     width: 80%;
     margin: 50px auto;
@@ -43,7 +42,7 @@ main.nosotros .perfil-1{
     margin-right: 50px;
 }
 
-.perfil-1 .textoPerfil-1{
+.perfil-1 .textoPerfil-1, .perfil-2 .textoPerfil-2{
     width: 500px;
 }
 
@@ -54,32 +53,19 @@ main.nosotros .perfil-1{
     overflow: auto;     
 }
 
-.textoPerfil-1 h2{
+.textoPerfil-1 h2, .textoPerfil-2 h2{
     font-weight: 400;
     font-size: 20px;
 }
 
-/*------------- P E R F I L  2 ----------*/
 
 
-main.nosotros .perfil-2{  
-    max-width: 1024px;
-    width: 80%;
-    margin: 50px auto;
-    grid-column: 1 /-1;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;     
-}
+/*------------- P E R F I L  2 ----------*/ 
 
 .perfil-2 .imgPerfil-2 img{
     height: 500px;
     border-radius: 10px;
     margin-left: 50px;
-}
-
-.perfil-2 .textoPerfil-2{
-    width: 500px;
 }
 
 .textoPerfil-2 h1, .textoPerfil-2 h2{
@@ -89,16 +75,15 @@ main.nosotros .perfil-2{
     overflow: auto;     
 }
 
-.textoPerfil-2 h2{
-    font-weight: 400;
-    font-size: 20px;
-}
+
 
 
 /*------------- V A L O R E S ----------*/
+
+
 .valores{
     margin-top: 50px;
-    background-color: white;
+    background-color:var(--color-base);
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr;
@@ -135,10 +120,10 @@ footer.footerNosotros{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #FF6F61;
+    background-color: var(--color-secundario);
     grid-column: 1 / -1;
     grid-row: auto;
-    color: white;
+    color: var(--color-base);
     align-items: center;
     height: 200px;
     width: 100%;
@@ -203,23 +188,4 @@ footer.footerNosotros{
     .perfil-1 .imgPerfil-1 img, .perfil-2 .imgPerfil-2 img{
         margin: 0;
     }
-
-
-
-    /* .perfil-2 .imgPerfil-2 img, .perfil-1 .imgPerfil-1 img{
-        height: 400px ;
-    }
-
-    .perfil-2 .textoPerfil-2{
-        width: 500px;
-    }
-    
-    .textoPerfil-1 h2, .textoPerfil-2 h2{
-        font-weight: 400;
-        font-size: 18px;
-    }
-
-    .textoPerfil-1 h1, .textoPerfil-2 h1{
-        font-size: 25px;
-    } */
   }

@@ -1,40 +1,50 @@
+@import url('variables.css');
 
-/*------------- B O D Y  -----------*/
-body{
+@import url('media.css');
+
+/*------------- P R I N C I P A L -----------*/
+
+.principal {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 100px 1fr 200px;
-    grid-gap: 10px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
     
 }
 
 
-/*------------- P R I N C I P A L -----------*/
-.principal {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 400px 500px 1fr;
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    justify-items: center;
-}
-
-
 /*------------- M A I L I N G -----------*/
+
 body .principal .mailing{
     display: block;
-    align-self: center;
-    width: 600px;  
+    border-radius: 20px;
+    align-self: center; 
+    margin-top: 20em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1 / -1;
+    justify-items: center;
+    height: 400px;
+    -webkit-box-shadow: 0px 3px 25px 7px rgba(143,135,143,0.12);
+    -moz-box-shadow: 0px 3px 25px 7px rgba(143,135,143,0.12);
+    box-shadow: 0px 3px 25px 7px rgba(143,135,143,0.12);
 }
 
-.principal .mailing h1{
-    margin: 10px 0;
-    text-align: left;
+.principal .mailing h2, .contacto h2{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     display: block;
+    font-size: var(--text-3xl);
 }
 
 .mailing .correo{
-    height: auto;
+    text-align: center;
+    margin: 30px 0;
 }
 
 .mailing .correo .labelCorreo{
@@ -42,88 +52,146 @@ body .principal .mailing{
     justify-self: center;
 }
 
-.mailing .correo input.correo {
-    width: 80%;
+.mailing .correo input.correo, input.correo {
+    font-size: var(--text-xl);
+    font-weight: 200;
+    width: 60%;
     padding: 12px;
     border: none;
-    margin: 0 20px 0 10px;
     outline: none;
-    border-bottom: 4px solid #5f0b8b;
-    color: #5f0b8b;
+    border-bottom: 3px solid var(--color-primario);
+    color: var(--color-secundario);
 }
 
-.mailing .boton input{
-    width: 100px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    color: #5f0b8b;
-    background-color: #26D07C;
-    margin-top: 30px;
+.mailing .boton{
+    text-align: center;
 }
+
+.mailing .boton input, .contacto .boton input{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-base);
+    font-size: var(--text-l);
+    background-color: var(--color-auxiliar);
+}
+
+.mailing .boton input:hover, .contacto .boton input:hover{
+    background-color: #6dd4a1;
+    transition: 0.3s;
+}
+
 
 
 /*------------- C O N T A C T O -----------*/
-body .contacto{
+
+.contacto{
     display: block;
-    width: 600px;
-    margin: 50px 50px;
-    grid-column: 1 / -1;  
+    width: 60%;
+    grid-column: 1 / -1;
+    height: auto;  
+    margin-bottom: 6rem;
 }
 
-form.formulario input.correo {
-    width: 80%;
-    padding: 12px;
-    border: none;
-    margin: 0 20px 0 10px;
-    outline: none;
-    border-bottom: 4px solid #5f0b8b;
-    color: #5f0b8b;
-}
-
-
-.contacto h2{
-    font-size: 30px;
-    font-weight: 600;
-    margin: 20px 0;  
+input.correo#GET-name, input.correo#correo2{
+    margin: var(--spacer-m) 0;
+    width: 90%;
 }
 
 .contacto p{
-    font-size: 25px;
-    /* font-weight: 600; */
-    margin: 20px 0;
-    
+    font-size: var(--text-xl);
+    display: inline;  
 }
+
+.contacto p.parrafo{
+    width: 80%;
+    display: block;
+}
+
 
 textarea{
     border: none;
-    background-color: #e5e5f7;
+    background-color: var(--color-base);
     opacity: 0.3;
     background-image:  radial-gradient(#8231c1 0.8500000000000001px, transparent 0.8500000000000001px), radial-gradient(#8231c1 0.8500000000000001px, #e5e5f7 0.8500000000000001px);
     background-size: 34px 34px;
     background-position: 0 0,17px 17px;
+    height: 200px;
+    width: 100%;
+    color: var(--color-secundario);
+    font-size: var(--text-xl);
+
 }
 
+
 .contacto .boton input{
-    width: 100px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    color: #5f0b8b;
-    background-color: #26D07C;
-    margin-top: 30px;
+    margin: 40px 0;
+    text-align: center;
 }
 
 
 
 /*------------- M A P A -----------*/
+
 body .principal .mapa{
     grid-column: 1 / -1;
-    grid-row: 3 / 4;
-    margin-bottom: 200px;
+    margin-bottom: var(--spacer-2xl);
     max-height: 600px;
 }
 
 body .principal .mapa H2{
-    margin-bottom: 30px;
+    margin-bottom: var(--spacer-m2);
+}
+   
+
+/*------------- F O O T E R -----------*/
+
+footer.footerContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-secundario);
+    color: var(--color-base);
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+.footerContacto p{
+    flex-direction: column;
+    font-size: var(--text-xl);
+    position: relative;
+}
+
+.footerContacto a.iconoFooter{
+    font-size: var(--text-2xl);
+    position: relative;
+    color: var(--color-base);
+    margin: 0 var(--spacer-m2);
+}
+
+
+/*------------- Z O N A   R E S P O N S I V E  -----------*/
+
+@media (max-width: 768px) {
+
+    
+    .principal .mailing{
+        display: block;
+        margin: auto;
+        width: 90%;
+        }
+
+    .correo{
+            margin-top: 5%;
+        }
+
+        .boton{
+            width: 100%;
+            align-self: center;
+                text-align: center;
+                width: 100%;
+                margin-top: 5%;
+        }
 }

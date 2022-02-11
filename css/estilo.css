@@ -29,7 +29,7 @@ body {
       align-items: center;
       justify-content: space-between; }
       .header .nav .nav__container .logo img {
-        height: 25px;
+        height: 22px;
         margin-left: 30px; }
       .header .nav .nav__container label .icono__menu, .header .nav .nav__container input.nav__input {
         display: none; }
@@ -94,21 +94,23 @@ body {
       margin-left: 30px;
       padding-top: 30px; }
     .contenedor .mailingHome .correo .correo {
+      font-size: var(--text-xl);
+      font-weight: 200;
       width: 80%;
       padding: 12px;
       border: none;
       margin: 5px 20px 0 30px;
       outline: none;
-      border-bottom: 4px solid var(--color-primario);
-      color: var(--color-primario); }
+      border-bottom: 3px solid var(--color-primario);
+      color: var(--color-secundario); }
   .contenedor .mailingHome .boton input {
-    width: 100px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     border: none;
-    border-radius: 10px;
-    color: var(--color-primario);
+    border-radius: 5px;
+    color: var(--color-base);
     background-color: var(--color-auxiliar);
-    margin-top: 30px; }
+    font-size: var(--text-l); }
     .contenedor .mailingHome .boton input:hover {
       background-color: #6dd4a1;
       transition: 0.3s; }
@@ -120,7 +122,8 @@ body {
   grid-column: 1 / -1;
   display: block;
   height: 200px;
-  text-align: center; }
+  text-align: center;
+  align-items: center; }
   .footer p {
     margin-top: 70px;
     font-size: var(--text-xl); }
@@ -156,7 +159,8 @@ body {
     display: block;
     margin: auto; }
     .contenedor .mailingHome h2 {
-      margin-top: 35%; }
+      margin-top: 35%;
+      text-align: center; }
     .contenedor .mailingHome .correo {
       margin-top: 5%; }
     .contenedor .mailingHome .boton {

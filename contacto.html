@@ -10,7 +10,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/contacto.css">
-        <!-- <link rel="stylesheet" href="css/dist/css/bootstrap.min.css"> -->
         <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
         <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/f3e2e18065.js" crossorigin="anonymous"></script>
@@ -18,106 +17,117 @@
     </head>
 
     <body>
+        <div class="contenedor">
 
- <!------------------ H E A D E R ------------------>
+            <!------------------ H E A D E R ------------------>
 
-        <header class="header">
+            <header class="header">
 
-            <!------------------ N A V B A R ------------------>
-
-            <nav class="navbar">
-                <a href="index.html" class="logo">
-                    <img src="/img/logo.png" alt="logo">
-                </a>
-                <button class="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul>
-                    <li> 
-                        <a class="pagina active" href ="index.html">Inicio</a>
-                    </li>
-                    <li> 
-                        <a class="pagina" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li> 
-                        <a class="pagina" href="#">Servicios</a>
-                        <ul>
+                <!------------------ N A V B A R ------------------>
+                <nav class="nav">
+                    <div class="nav__container">
+                        
+                        <a href="index.html" class="logo">
+                            <img src="/img/logo.png" alt="logo">
+                        </a>
+                        
+                        <label for="menu">
+                            <img src="/assets/menu.svg" class="icono__menu" alt="">
+                        </label>
+                        
+                        <input type="checkbox" name="" id="menu" class="nav__input">
+                        
+                        <ul class="nav__menu">
                             <li> 
-                                <a class="pagina" href="servImp.html">Importaciones</a> 
+                                <a class="nav__item" href ="index.html">Inicio</a>
                             </li>
                             <li> 
-                                <a class="pagina" href="servExt.html">Exportaciones</a> 
+                                <a class="nav__item" href="nosotros.html">Nosotros</a>
                             </li>
+                            <li> 
+                                <a class="nav__item" href="#">Servicios</a>
+                                <ul>
+                                    <li> 
+                                        <a class="nav__itemA" href="servImp.html">Importaciones</a> 
+                                    </li>
+                                    <li> 
+                                        <a class="nav__itemB" href="servExt.html">Exportaciones</a> 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> 
+                                <a class="nav__item" href="contacto.html">Contacto</a>
+                            </li> 
                         </ul>
-                    </li>
-                    <li> 
-                        <a class="pagina" href="contacto.html">Contacto</a>
-                    </li> 
-                </ul>
-            </nav>
-        </header>
+                    </div>
+                </nav>
 
-<!------------------ M A I N ------------------>
-        <main class="principal">
-        
-        <!------------------ R E G I S T R A T E ------------------>
-            
-            <div class="mailing">
-                <h1>pongámonos en contacto!</h1>
-                <h2>registrate!!!</h2>
-                <div class="correo">
-                    <label class="labelCorreo" for="correo">queremos compartirte muchas cosas!!</label>
-                    <input type="email" class="correo" id="correo" placeholder="escribe acá tu correo" required>
-                    <span class="linea"></span>
-                </div>
-                <div class="boton">
-                    <input type="submit" value="Enviar">
-                </div>   
-            </div>
+            </header>
 
-            <!------------------ C O N T A C T O ------------------>
+            <!------------------ M A I N ------------------>
+
+            <main class="principal">
                 
-        
-            <div class="contacto">
-                <h2>tus solicitudes por acá:</h2> 
-                
-                <p>datos</p>
-                
-                <form action="" class="formulario">
-                    <input id="GET-name" class="correo" type="text" name="name" placeholder="nombre y apellido">
-                    <input type="email" class="correo" id="correo" placeholder="escribe acá tu correo" required>
-                    <label for="radio">¿Eres mayor de edad?</label>
-                    <label for="texto">si</label>
-                    <input type="radio" name="si" id="si">
-                    <label for="texto">no</label>
-                    <input type="radio" name="no" id="no"> 
-                    <label for="texto">Dejanos un comentario!</label>
-                    <textarea name="" id="" cols="70" rows="5"></textarea>
+                <!------------------ R E G I S T R A T E ------------------>
                     
+                <div class="mailing">
+                    <h2>REGISTRATE!!</h2>
+                    <div class="correo">
+                        <label class="labelCorreo" for="correo">queremos compartirte muchas cosas!!</label>
+                        <input type="email" class="correo" id="correo" placeholder="escribe acá tu correo" required>
+                        <span class="linea"></span>
+                    </div>
                     <div class="boton">
-                        <input type="submit" value="Enviar">
-                    </div>    
-                </form>    
+                        <input type="submit" value="enviar">
+                    </div>     
+                </div>
                 
-            </div>
-            <div class="mapa">
-                <h2>Nos puedes encontrar acá</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405689.78269440343!2d-122.04109805!3d37.40280355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2scl!4v1636596831799!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
+                <!------------------ C O N T A C T O ------------------>
+                        
+                
+                <div class="contacto">
+                    <h2>tus solicitudes por acá:</h2> 
+                    
+                    <p class="parrafo">por favor completa tus datos y dinos qué necesitas, te responderemos a la brevedad posible</p>
+                    
+                    <form action="" class="formulario">
+                        <input id="GET-name" class="correo" type="text" name="name" placeholder="nombre y apellido">
+                        <input type="email" class="correo" id="correo2" placeholder="escribe acá tu correo" required>
+                        <br>
+                        <br>
+                        <label for="radio"> <p>¿Eres mayor de edad?</p> </label>
+                        <br>
+                        <label for="texto"> <p>Si</p></label>
+                        <input type="radio" name="si" id="si">
+                        <label for="texto"><p>No</p></label>
+                        <input type="radio" name="no" id="no">
+                        <br> 
+                        <label for="texto"><p>Dejanos un comentario!</p></label>
+                        <textarea name="" id="" cols="70" rows="5"></textarea>
+                        
+                        <div class="boton">
+                            <input type="submit" value="Enviar">
+                        </div>    
+                    </form>    
+                    
+                </div>
+                <div class="mapa">
+                    <h2>Nos puedes encontrar acá</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405689.78269440343!2d-122.04109805!3d37.40280355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2scl!4v1636596831799!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>        
+            </main>
             
-    </main>
-    
- <!------------------ F O O T E R ------------------>
+            <!------------------ F O O T E R ------------------>
 
-    <footer class="footer">
-        <p>@ made with Love...</p>
-        <div class="iconos">
-            <a href=".html" class="iconoFooter"><i class="fab fa-instagram"></i></a>
-            <a href=".html" class="iconoFooter"><i class="fab fa-facebook-f"></i></a>
-            <a href=".html" class="iconoFooter"><i class="fab fa-linkedin-in"></i></a>
+            <footer class="footerContacto">
+                <p>@ made with Love...</p>
+                <div class="iconos">
+                    <a href=".html" class="iconoFooter"><i class="fab fa-instagram"></i></a>
+                    <a href=".html" class="iconoFooter"><i class="fab fa-facebook-f"></i></a>
+                    <a href=".html" class="iconoFooter"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </footer>
         </div>
-    </footer>
-
-</body>
+    </body>
 </html>

@@ -42,7 +42,7 @@ body {
             justify-content: space-between;
             
             .logo img{
-                height: 25px;
+                height: 22px;
                 margin-left: 30px;
                   
             }
@@ -141,24 +141,26 @@ body {
         }
 
         .correo{
+            font-size: var(--text-xl);
+            font-weight: 200;
             width: 80%;
             padding: 12px;
             border: none;
             margin: 5px 20px 0 30px;
             outline: none;
-            border-bottom: 4px solid var(--color-primario);
-            color: var(--color-primario);
+            border-bottom: 3px solid var(--color-primario);
+            color: var(--color-secundario);
         }
     }
 
     .boton input{
-        width: 100px;
-        height: 40px;
+        width: 150px;
+        height: 50px;
         border: none;
-        border-radius: 10px;
-        color: var(--color-primario);
+        border-radius: 5px;
+        color: var(--color-base);
         background-color: var(--color-auxiliar);
-        margin-top: 30px;
+        font-size: var(--text-l);
 
         &:hover{
             background-color: #6dd4a1;
@@ -179,6 +181,7 @@ body {
     display: block;
     height: 200px;
     text-align: center;
+    align-items: center;
 
     p {
         margin-top: 70px;
@@ -200,6 +203,7 @@ body {
 
 
 /*  - - - - - - -   Z O N A  R E S P O N S I V E - - - - - - - */
+
 
 @media (max-width: 768px) {
 
@@ -230,11 +234,13 @@ body {
     }
     
     .contenedor .mailingHome{
+        
         display: block;
         margin: auto;
        
         h2{
            margin-top: 35%; 
+           text-align: center;
         }
 
         .correo{
